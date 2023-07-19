@@ -7,12 +7,12 @@ import { SCHEMA } from '@/mb-ai-bos/utils/near/types/schema';
 
 export async function POST(req: Request) {
   const body = await req.json();
-  
+
   const deserializeDelegate = deserialize(SCHEMA, SignedDelegate, Buffer.from(new Uint8Array(body)));
 
   const result = await submitTransaction({
     delegate: deserializeDelegate,
-    network: 'testnet',
+    network: process.env.NEXT_PUBLIC_NETWORK_ID as string,
   });
 
   return NextResponse.json(

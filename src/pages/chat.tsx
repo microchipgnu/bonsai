@@ -141,6 +141,8 @@ const ChatPage: NextPageWithLayout = () => {
           messages: messages,
           onNewMessage: onNewMessage,
           isLoading: isLoading,
+          renderTabs: true,
+          renderInput: true,
         }}
         meta={{ title: 'Chat AI', description: 'Do anything on the BOS' }}
       />

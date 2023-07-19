@@ -48,7 +48,7 @@ export const componentsByNetworkId: Record<NetworkId, NetworkComponents | undefi
     bosDirectory: 'one.testnet/widget/BOSDirectory',
     componentSummary: 'discom.testnet/widget/ComponentSummary',
     componentsPage: 'discom.testnet/widget/ComponentsPage',
-    chatPage: 'fbbd5df4-4aa9-4df9-a77b-f209c9838c43.test-relayer-1.testnet/widget/chat',
+    chatPage: 'faa96031-0d64-4442-8676-2bbadaa634a4.test-relayer-1.testnet/widget/chat',
     default: 'discom.testnet/widget/ActivityPage',
     digButton: 'discom.testnet/widget/DIG.Button',
     editorComponentSearch: 'one.testnet/widget/Editor.ComponentSearch',

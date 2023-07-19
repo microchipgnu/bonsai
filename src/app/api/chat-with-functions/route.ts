@@ -4,7 +4,7 @@ import type { ChatCompletionFunctions } from "openai-edge/types/api";
 
 const getDescriptionProperty = async (pluginId: string, property: string) => {
   const res = await fetch(
-    `http://localhost:3000/api/get-public-file/${pluginId}/${property}`
+    `${process.env.NEXT_PUBLIC_HOSTNAME}/api/get-public-file/${pluginId}/${property}`
   );
   const data = await res.json();
 
@@ -12,7 +12,7 @@ const getDescriptionProperty = async (pluginId: string, property: string) => {
 };
 const getDescription = async (pluginId: string) => {
   const res = await fetch(
-    `http://localhost:3000/api/get-public-file/${pluginId}`
+    `${process.env.NEXT_PUBLIC_HOSTNAME}/api/get-public-file/${pluginId}`
   );
   const data = await res.json();
 

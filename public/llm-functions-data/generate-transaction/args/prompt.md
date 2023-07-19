@@ -1,0 +1,1 @@
+- Arguments to pass to the smart contract method as an object instance

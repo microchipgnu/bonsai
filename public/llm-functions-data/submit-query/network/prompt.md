@@ -1,0 +1,1 @@
+- ALWAYS use either "testnet" or "mainnet" for the `network`. Accounts ending in .near are generally mainnet accounts, .testnet are testnet ones. Examples of mainnet accounts: nate.near, microchipgnu.near, mintbase.near.
